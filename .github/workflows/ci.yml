@@ -13,3 +13,8 @@ jobs:
       - uses: kk-security-phani/lab-actions/setup-env@main
         with:
           environment: 'staging'
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production-env
+    steps:
+      - run: echo "Deploying with ${{ secrets.PROD_DB_PASSWORD }}"        

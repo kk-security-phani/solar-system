@@ -12,5 +12,4 @@ jobs:
     steps:
       - uses: kk-security-phani/lab-actions/setup-env@main
         with:
-          environment: 'staging'   
-      - uses: some-random/action@v2
+          environment: 'staging'
